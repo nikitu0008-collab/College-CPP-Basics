@@ -1,7 +1,7 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
-	std::cout << "Ââåäèòå ÷èñëî, îòğèöàòåëüíîå ÷òîáû îñòàíîâèòü: ";
+	system("chcp 65001");
+	std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾, Ğ¾Ñ‚Ñ€Ğ¸Ñ†Ğ°Ñ‚ĞµĞ»ÑŒĞ½Ğ¾Ğµ Ñ‡Ñ‚Ğ¾Ğ±Ñ‹ Ğ¾ÑÑ‚Ğ°Ğ½Ğ¾Ğ²Ğ¸Ñ‚ÑŒ: ";
 	int sum = 0, num = 1, count = 0;
 	while (num >= 0) {
 		std::cin >> num;
@@ -10,5 +10,5 @@ int main() {
 			sum += num;
 		}
 	}
-	std::cout << "Êîë-âî: " << count << "\nÑóììà: " << sum;
+	std::cout << "ĞšĞ¾Ğ»-Ğ²Ğ¾: " << count << "\nĞ¡ÑƒĞ¼Ğ¼Ğ°: " << sum;
 }

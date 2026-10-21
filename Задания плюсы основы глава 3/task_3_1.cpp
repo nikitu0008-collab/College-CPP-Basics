@@ -2,7 +2,7 @@
 #include <cstdlib>  // для EXIT_SUCCESS
 
 auto main() -> int {
-    system("chcp 1251");
+    system("chcp 65001");
     double num1, num2, num3;
     std::cout << "Введите 3 вещественных числа: ";
     std::cin >> num1 >> num2 >> num3;

@@ -1,9 +1,9 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	int choice = 0;
 	int arr[10];
-	std::cout << "1.от 0 до 10\n2.от -10 до 10\n:>";
+	std::cout << "1.РѕС‚ 0 РґРѕ 10\n2.РѕС‚ -10 РґРѕ 10\n:>";
 	std::cin >> choice;
 	for (int i = 0; i < 10; i++) {
 		if (choice == 1) {
@@ -16,7 +16,7 @@ int main() {
 			std::cout << arr[i] << " ";
 		}
 		if (choice != 1 && choice != 2) {
-			std::cout << "Неверно...";
+			std::cout << "РќРµРІРµСЂРЅРѕ...";
 		}
 	}
 }

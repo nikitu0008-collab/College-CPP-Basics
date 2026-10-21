@@ -4,14 +4,14 @@ int evclidFunc(int num1, int num2) {
 	evclidFunc(num2, num1%num2);
 }
 int main() {
-	system("chcp 1251 > nul");
+	system("chcp 65001 > nul");
 	int num1;
 	int num2;
-	std::cout << "Âåäèòå ïåğâîå ÷èñëî: ";
+	std::cout << "Ğ’ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¿ĞµÑ€Ğ²Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾: ";
 	std::cin >> num1;
 	system("cls");
-	std::cout << "Âåäèòå âòîğîå ÷èñëî: ";
+	std::cout << "Ğ’ĞµĞ´Ğ¸Ñ‚Ğµ Ğ²Ñ‚Ğ¾Ñ€Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾: ";
 	std::cin >> num2;
 	system("cls");
-	std::cout << "ÍÎÄ ıòèõ äâóõ ÷èñåë ğàâåí: " << evclidFunc(num1, num2);
+	std::cout << "ĞĞĞ” ÑÑ‚Ğ¸Ñ… Ğ´Ğ²ÑƒÑ… Ñ‡Ğ¸ÑĞµĞ» Ñ€Ğ°Ğ²ĞµĞ½: " << evclidFunc(num1, num2);
 }

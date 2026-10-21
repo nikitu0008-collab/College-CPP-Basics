@@ -7,10 +7,10 @@ auto mySum(int num) -> int{
 	return sum;
 }
 auto main() -> int {
-	system("chcp 1251");
+	system("chcp 65001");
 	int num = 0;
-	std::cout << "Ââåäèòå ÷èñëî: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
 	std::cin >> num;
-	std::cout << "Îòâåò: " << mySum(num);
+	std::cout << "ÐžÑ‚Ð²ÐµÑ‚: " << mySum(num);
 	
 }

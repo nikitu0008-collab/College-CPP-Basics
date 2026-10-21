@@ -1,6 +1,6 @@
 #include <iostream>
 int main() {
-	system("chcp 1251 > nul");
+	system("chcp 65001 > nul");
 	srand(static_cast <int>(time(0)));
 	int nicho;
 	int arr_size = 1;
@@ -12,40 +12,40 @@ int main() {
 
 	while (choice != 7) {
 
-		std::cout << R"(ÌÎÆÍÎ ÂÂÎÄÈÒÜ ÒÎËÜÊÎ ×ÈÑËÀ
-1.Ñîçäàòü ìàññèâ
-2.Âûâîä ìàññèâà
-3.Ïîèñê ìàêñèìàëüíîãî è ìèíèìàëüíîãî
-4.Ïîäñ÷¸ò ñóììû
-5.Ñðåäíåå àðèôìåòè÷åñêîå
-6.Ïîèñê îòðèöàòåëüíûõ
-7.Âûõîä
-Ââîä: )";
+		std::cout << R"(ÐœÐžÐ–ÐÐž Ð’Ð’ÐžÐ”Ð˜Ð¢Ð¬ Ð¢ÐžÐ›Ð¬ÐšÐž Ð§Ð˜Ð¡Ð›Ð
+1.Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð¼Ð°ÑÑÐ¸Ð²
+2.Ð’Ñ‹Ð²Ð¾Ð´ Ð¼Ð°ÑÑÐ¸Ð²Ð°
+3.ÐŸÐ¾Ð¸ÑÐº Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð¸ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾
+4.ÐŸÐ¾Ð´ÑÑ‡Ñ‘Ñ‚ ÑÑƒÐ¼Ð¼Ñ‹
+5.Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ
+6.ÐŸÐ¾Ð¸ÑÐº Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ…
+7.Ð’Ñ‹Ñ…Ð¾Ð´
+Ð’Ð²Ð¾Ð´: )";
 		choice = 0;
 		std::cin >> intnum;
 		choice = intnum;
 		if (choice != intnum || choice <= 0 || choice > 7) {
 			system("cls");
-			std::cout << "ÍÅÖÅËÎÅ ×ÈÑËÎ ÈËÈ ÑËÈØÊÎÌ ÍÅ ÎÒ 1 ÄÎ 7" << "\n";
+			std::cout << "ÐÐ•Ð¦Ð•Ð›ÐžÐ• Ð§Ð˜Ð¡Ð›Ðž Ð˜Ð›Ð˜ Ð¡Ð›Ð˜Ð¨ÐšÐžÐœ ÐÐ• ÐžÐ¢ 1 Ð”Ðž 7" << "\n";
 		}
 		else {
 			if (choice == 1) {
 				delete[] arr;
 				arr = nullptr;
 				system("cls");
-				std::cout << "Ââåäèòå êîë-âî ýëåìåíòîâ: " << "\n";
+				std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " << "\n";
 				std::cin >> intnum;
 				arr_size = intnum;
-				if (arr_size <= 0 || arr_size != intnum) { std::cout << "ÍÅËÜÇß" << "\n"; }
+				if (arr_size <= 0 || arr_size != intnum) { std::cout << "ÐÐ•Ð›Ð¬Ð—Ð¯" << "\n"; }
 				else {
-					std::cout << "Êàê çàïîëíèòü? 1.Êëàâèàòóðà 2.Ñëó÷àéíûå ÷èñëà" << '\n';
+					std::cout << "ÐšÐ°Ðº Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÑŒ? 1.ÐšÐ»Ð°Ð²Ð¸Ð°Ñ‚ÑƒÑ€Ð° 2.Ð¡Ð»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ðµ Ñ‡Ð¸ÑÐ»Ð°" << '\n';
 					std::cin >> intnum;
 					nicho = intnum;
-					if ((nicho != 1 && nicho != 2) || nicho != intnum) { std::cout << "ÍÅËÜÇß" << "\n"; }
+					if ((nicho != 1 && nicho != 2) || nicho != intnum) { std::cout << "ÐÐ•Ð›Ð¬Ð—Ð¯" << "\n"; }
 					else {
 						arr = new int[arr_size];
 						if (nicho == 1) {
-							std::cout << "Ââåäèòå âñå ýëåìåíòû: " << "\n";
+							std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²ÑÐµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹: " << "\n";
 							for (int i = 0; i < arr_size; i++) {
 								std::cin >> intnum;
 								arr[i] = intnum;
@@ -61,7 +61,7 @@ int main() {
 			}
 			if (choice == 2) {
 				system("cls");
-				if (arr == nullptr) { std::cout << "ÍÅËÜÇß" << "\n"; }
+				if (arr == nullptr) { std::cout << "ÐÐ•Ð›Ð¬Ð—Ð¯" << "\n"; }
 				else {
 					for (int i = 0; i < arr_size; i++) {
 						std::cout << arr[i] << " ";
@@ -72,7 +72,7 @@ int main() {
 			}
 			if (choice == 3) {
 				system("cls");
-				if (arr == nullptr) { std::cout << "ÍÅËÜÇß" << "\n"; }
+				if (arr == nullptr) { std::cout << "ÐÐ•Ð›Ð¬Ð—Ð¯" << "\n"; }
 				else {
 					int max = arr[0];
 					int min = arr[0];
@@ -80,39 +80,39 @@ int main() {
 						if (min > arr[i]) min = arr[i];
 						if (max < arr[i]) max = arr[i];
 					}
-					std::cout << "Ìàêñèìàëüíûé è ìèíèìàëüíûé ýëåìåíò ìàññèâà: " << max << " " << min << "\n";
+					std::cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð¸ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << max << " " << min << "\n";
 				}
 			}
 			if (choice == 4) {
 				system("cls");
-				if (arr == nullptr) { std::cout << "ÍÅËÜÇß" << "\n"; }
+				if (arr == nullptr) { std::cout << "ÐÐ•Ð›Ð¬Ð—Ð¯" << "\n"; }
 				else {
 					for (int i = 0; i < arr_size; i++) {
 						sum += arr[i];
 					}
-					std::cout << "Ñóììà ýëåìåíòîâ: " << sum << "\n";
+					std::cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " << sum << "\n";
 					sum *= 0;
 				}
 			}
 			if (choice == 5) {
 				system("cls");
-				if (arr == nullptr) { std::cout << "ÍÅËÜÇß" << "\n"; }
+				if (arr == nullptr) { std::cout << "ÐÐ•Ð›Ð¬Ð—Ð¯" << "\n"; }
 				else {
 					for (int i = 0; i < arr_size; i++) {
 						sum += arr[i];
 					}
 					avg = sum / arr_size;
-					std::cout << "Ñðåäíåå àðèôìåòè÷åñêîå: " << avg << "\n";
+					std::cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ: " << avg << "\n";
 					sum *= 0;
 					avg *= 0;
 				}
 			}
 			if (choice == 6) {
 				system("cls");
-				if (arr == nullptr) { std::cout << "ÍÅËÜÇß" << "\n"; }
+				if (arr == nullptr) { std::cout << "ÐÐ•Ð›Ð¬Ð—Ð¯" << "\n"; }
 				else {
 					for (int i = 0; i < arr_size; i++) {
-						if (arr[i] < 0) std::cout << "Ýëåìåíò ïî àäðåñó " << "[" << i << "]" << " Îòðèöàòåëüíûé" << "\n";
+						if (arr[i] < 0) std::cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ Ð¿Ð¾ Ð°Ð´Ñ€ÐµÑÑƒ " << "[" << i << "]" << " ÐžÑ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¹" << "\n";
 					}
 
 				}

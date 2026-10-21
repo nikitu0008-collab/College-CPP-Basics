@@ -1,20 +1,19 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	srand(static_cast<int>(time(0)));
 	const int lenght = 10;
 	int arr[lenght];
 	for (int i = 0; i < lenght; i++) {
 		*(arr + i) = rand() % 10;
 		std::cout << *(arr + i) << " ";
-		int* ptr = &i;
 	}
 	int* ptr1 = new int;
-	std::cout << "\n" << "Ââåäèòå ÷èñëî äëÿ ïîèñêà: ";
+	std::cout << "\n" << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ°: ";
 	std::cin >> *ptr1;
 	for (int i = 0; i < lenght; i++) {
 		if (*(arr + i) != *ptr1) {
-			std::cout << "\n" << "Íàéäåíî íåñîîòâåòñâèå: " << "arr [" << i << "]" ;
+			std::cout << "\n" << "ÐÐ°Ð¹Ð´ÐµÐ½Ð¾ Ð½ÐµÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÐ²Ð¸Ðµ: " << "arr [" << i << "]" ;
 		}
 	}
 	delete ptr1;

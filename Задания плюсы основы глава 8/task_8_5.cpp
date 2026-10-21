@@ -3,13 +3,13 @@ void myMult(int& num,const int& mult) {
 	num *= mult;
 }
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	int num = 0;
-	std::cout << "Ââåäèòå çíà÷åíèå: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: ";
 	std::cin >> num;
 	int mult = 0;
-	std::cout <<"\n"<< "Ââåäèòå ìíîæèòåëü: ";
+	std::cout <<"\n"<< "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð½Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒ: ";
 	std::cin >> mult;
 	myMult(num, mult);
-	std::cout << "\n" << "×èñëî ïîñëå óìíîæåíèÿ: " << num << "\n";
+	std::cout << "\n" << "Ð§Ð¸ÑÐ»Ð¾ Ð¿Ð¾ÑÐ»Ðµ ÑƒÐ¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ñ: " << num << "\n";
 }

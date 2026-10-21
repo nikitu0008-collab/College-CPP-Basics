@@ -5,7 +5,7 @@ void recFunc(int num) {
 
 }
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	int num = 1;
 	recFunc(num);
 

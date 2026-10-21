@@ -1,13 +1,12 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
-	int diff = 0;
-	std::cout << "Ââåäèòå êîë-âî ÷èñåë";
+	system("chcp 65001");
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ Ñ‡Ð¸ÑÐµÐ»";
 	int amount = 0;
 	std::cin >> amount;
 	int num = 0;
 	int max = 0,min = 0;
-	std::cout << "Ââîäèòå ÷èñëà: ";
+	std::cout << "Ð’Ð²Ð¾Ð´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð°: ";
 	std::cin >> num;
 	max = num; min = num;
 	for (int i = 0; i < amount-1; i++) {
@@ -15,5 +14,5 @@ int main() {
 		if (num < min) min = num;
 		if (num > max) max = num;
 	}
-	std::cout << "Ìèíèìóì: " << min << "\nÌàêñèìóì: " << max << "\nÐàçíèöà" << max - min;
+	std::cout << "ÐœÐ¸Ð½Ð¸Ð¼ÑƒÐ¼: " << min << "\nÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼: " << max << "\nÐ Ð°Ð·Ð½Ð¸Ñ†Ð°" << max - min;
 }

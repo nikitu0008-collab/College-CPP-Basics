@@ -4,9 +4,9 @@ int recFunc(int num, int num2, int num3) {
 	return num;
 }
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	int num,dochego,nascoco;
-	std::cout << "Ââåäèòå îò ÷åãî, äî ÷åãî, è íà ñêîëüêî: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾Ñ‚ Ñ‡ÐµÐ³Ð¾, Ð´Ð¾ Ñ‡ÐµÐ³Ð¾, Ð¸ Ð½Ð° ÑÐºÐ¾Ð»ÑŒÐºÐ¾: ";
 	std::cin >> num >> dochego >> nascoco;
 	recFunc(num, dochego, nascoco);
 }

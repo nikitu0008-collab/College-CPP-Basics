@@ -2,16 +2,15 @@
 int myFunc(char words[]) {
 	int count = 0;
 	while (words[count] != '\0') {
-		words[count];
 		count++;
 	}
 	return count;
 }
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	char word[30];
-	std::cout << "Ââåäèòå ñòðîêó ìàêñèìóì 30 ýëåìåíòîâ: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ Ð¼Ð°ÐºÑÐ¸Ð¼ÑƒÐ¼ 30 ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: ";
 	std::cin >> word;
 	std::cout << "\n";
-	std::cout << "Ðàçìåð ñòðîêè = " << myFunc(word);
+	std::cout << "Ð Ð°Ð·Ð¼ÐµÑ€ ÑÑ‚Ñ€Ð¾ÐºÐ¸ = " << myFunc(word);
 }

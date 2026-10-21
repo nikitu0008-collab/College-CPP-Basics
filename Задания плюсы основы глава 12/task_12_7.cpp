@@ -1,31 +1,31 @@
 #include <iostream>
 #include <string>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	std::string username, password, password_2, login, password_login;
-	std::cout << "Ââåäèòå èìÿ: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ: ";
 	std::cin >> username;
-	std::cout << "Ââåäèòå ïàðîëü: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ: ";
 	std::cin >> password;
-	std::cout << "Ââåäèòå ïàðîëü åù¸ ðàç: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ ÐµÑ‰Ñ‘ Ñ€Ð°Ð·: ";
 	std::cin >> password_2;
 	while (password != password_2) {
-		std::cout << '\n' << "Ïîâòîðèòå: ";
+		std::cout << '\n' << "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ: ";
 		std::cin >> password_2;
 	}
 	system("cls");
 	if (password == password_2) {
 		std::cin.ignore();
-		std::cout << "Ðåãèñòðàöèÿ ïðîøëà óñïåøíî ";
+		std::cout << "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ Ð¿Ñ€Ð¾ÑˆÐ»Ð° ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ ";
 		while ((password != password_2) or (username != login)) {
 			system("cls");
-			std::cout << "\nÂâåäèòå ëîãèí : ";
+			std::cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð»Ð¾Ð³Ð¸Ð½ : ";
 			std::cin >> login;
-			std::cout << "Ââåäèòå ïàðîëü : ";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ : ";
 			std::cin >> password_login;
 			if ((password == password_2) && (username == login)) {
 				system("cls");
-				std::cout << "Âû óñïåøíî âîøëè!";
+				std::cout << "Ð’Ñ‹ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð²Ð¾ÑˆÐ»Ð¸!";
 			}
 		}
 	}

@@ -2,32 +2,32 @@
 #include <fstream>
 #include <string>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	std::string str,file,caesar_file,decrypt_file;
 	std::cin >> file;
 	std::fstream text(file);
 	std::getline(text, str, '\0');
 	text.close();
-	std::cout << "×òî äåëàòü? \n 1.øèôðîâàòü 2.äåøèôðîâàòü \n";
+	std::cout << "Ð§Ñ‚Ð¾ Ð´ÐµÐ»Ð°Ñ‚ÑŒ? \n 1.ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ 2.Ð´ÐµÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ \n";
 	int choice, key = 3;
 	std::cin >> choice;
 	if (choice == 1) {
-		for (int i = 0; i < str.size(); i++) {
+		for (int i = 0; i < static_cast<int>(str.size()); i++) {
 			caesar_file.push_back(str.at(i) + key);
 
 		}
 		text.open(file);
 		text << caesar_file;
 		text.close();
-		std::cout << "Çàøèôðîâàí.";
+		std::cout << "Ð—Ð°ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ð°Ð½.";
 	}
 	if (choice == 2) {
-		for (int i = 0; i < str.size(); i++) {
+		for (int i = 0; i < static_cast<int>(str.size()); i++) {
 			decrypt_file.push_back(str.at(i) - key);
 		}
 		text.open(file);
 		text << decrypt_file;
 		text.close();
-		std::cout << "Ðàñøèôðîâàí.";
+		std::cout << "Ð Ð°ÑÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ð°Ð½.";
 	}
 }

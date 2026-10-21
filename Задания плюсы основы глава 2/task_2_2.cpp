@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 auto main() -> int{
-	system("chcp 1251");
-	std::cout << "Òîìèëîâ Äìèòðèé Àëåêñàíäðîâè÷, 2008, äåðåâÿííûé";
+	system("chcp 65001");
+	std::cout << "Ð¢Ð¾Ð¼Ð¸Ð»Ð¾Ð² Ð”Ð¼Ð¸Ñ‚Ñ€Ð¸Ð¹ ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€Ð¾Ð²Ð¸Ñ‡, 2008, Ð´ÐµÑ€ÐµÐ²ÑÐ½Ð½Ñ‹Ð¹";
 	return EXIT_SUCCESS;
 }

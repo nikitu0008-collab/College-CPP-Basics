@@ -1,8 +1,8 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	int cho = 0;
-	std::cout << "Êàê âûâåñòè ìàññèâ?\n1.×¸òíûå\n2.Íå÷¸òíûå\n:>";
+	std::cout << "ÐšÐ°Ðº Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¼Ð°ÑÑÐ¸Ð²?\n1.Ð§Ñ‘Ñ‚Ð½Ñ‹Ðµ\n2.ÐÐµÑ‡Ñ‘Ñ‚Ð½Ñ‹Ðµ\n:>";
 	std::cin >> cho;
 	int arr[100];
 	

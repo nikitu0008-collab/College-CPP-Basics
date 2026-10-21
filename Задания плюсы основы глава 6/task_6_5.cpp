@@ -1,28 +1,28 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	const int dlina = 7;
 	double arr[dlina];
 	int celoe = 0;
 
-	std::cout << "Ââåäèòå ýëåìåíòû ìàññèâà: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	for (int i = 0; i < dlina; i++) {
 		std::cin >> arr[i];
 	}
-	std::cout << "Îòðèöàòåëüíûå: ";
+	std::cout << "ÐžÑ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ: ";
 	for (int i = 0; i < dlina; i++) {
 		if (arr[i] < 0) {
 			std::cout << arr[i] << " ";
 		}
 	}
-	std::cout << "Íåöåëûå: ";
+	std::cout << "ÐÐµÑ†ÐµÐ»Ñ‹Ðµ: ";
 		for (int i = 0; i < dlina; i++) {
 			celoe = arr[i];
 			if ((arr[i] - celoe) != 0) {
 				std::cout << arr[i] << " ";
 			}
 		}
-		std::cout << "Öåëûå ïîëîæèòåëüíûå: ";
+		std::cout << "Ð¦ÐµÐ»Ñ‹Ðµ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ: ";
 		for (int i = 0; i < dlina; i++) {
 			celoe = arr[i];
 			if (((arr[i] - celoe) == 0)&& arr[i] > 0) {

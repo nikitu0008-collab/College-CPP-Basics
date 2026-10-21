@@ -1,37 +1,37 @@
 #include <iostream>
 #include <vector>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	std::vector<int>sales;
 	int cho = 0;
 	int sale;
 	int sum = 0;
 	while (cho != 7) {
-		std::cout << "\n1.Ввести продажу\n2.Вывести лист продаж\n3.Удалить последнюю продажу\n4.Вывести кол-во продаж и их сумму\n5.Минимум Максимум\n>_";
+		std::cout << "\n1.Р’РІРµСЃС‚Рё РїСЂРѕРґР°Р¶Сѓ\n2.Р’С‹РІРµСЃС‚Рё Р»РёСЃС‚ РїСЂРѕРґР°Р¶\n3.РЈРґР°Р»РёС‚СЊ РїРѕСЃР»РµРґРЅСЋСЋ РїСЂРѕРґР°Р¶Сѓ\n4.Р’С‹РІРµСЃС‚Рё РєРѕР»-РІРѕ РїСЂРѕРґР°Р¶ Рё РёС… СЃСѓРјРјСѓ\n5.РњРёРЅРёРјСѓРј РњР°РєСЃРёРјСѓРј\n>_";
 		std::cin >> cho;
 		switch (cho) {
 		case 1:
-			std::cout << "Введите сумму: \n";
+			std::cout << "Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ: \n";
 			std::cin >> sale;
 			sales.push_back(sale);
 			break;
 		case 2:
-			for (int i = 0; i < sales.size(); i++) std::cout << "\nПродажа № " << i + 1 << " -> Сумма продажи " << sales.at(i) << "\n";
+			for (size_t i = 0; i < sales.size(); i++) std::cout << "\nРџСЂРѕРґР°Р¶Р° в„– " << i + 1 << " -> РЎСѓРјРјР° РїСЂРѕРґР°Р¶Рё " << sales.at(i) << "\n";
 			break;
 		case 3:
 			sales.pop_back();
-			std::cout << "Продажа успешно удалена: \n";
+			std::cout << "РџСЂРѕРґР°Р¶Р° СѓСЃРїРµС€РЅРѕ СѓРґР°Р»РµРЅР°: \n";
 			break;
 		case 4:
-			for (int i = 0; i < sales.size(); i++) sum += sales.at(i);
-			std::cout << "Общее количество продаж: " << sales.size() << " Общая сумма продаж: " << sum << "\n";
+			for (size_t i = 0; i < sales.size(); i++) sum += sales.at(i);
+			std::cout << "РћР±С‰РµРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РїСЂРѕРґР°Р¶: " << sales.size() << " РћР±С‰Р°СЏ СЃСѓРјРјР° РїСЂРѕРґР°Р¶: " << sum << "\n";
 			break;
 		case 5:
 			int max = sales.at(0), min = sales.at(0);
-			for (int i = 0; i < sales.size(); i++) {
+			for (size_t i = 0; i < sales.size(); i++) {
 				if (sales.at(i) > max)max = sales.at(i);
 				if (sales.at(i) < min)min = sales.at(i);
-				std::cout << "Минимальная продажа " << min << " Максимальная продажа " << max;
+				std::cout << "РњРёРЅРёРјР°Р»СЊРЅР°СЏ РїСЂРѕРґР°Р¶Р° " << min << " РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ РїСЂРѕРґР°Р¶Р° " << max;
 			}
 		}
 		

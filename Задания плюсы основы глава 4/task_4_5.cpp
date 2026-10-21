@@ -1,10 +1,10 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
-	std::cout << "Ââåäèòå Íà÷àëî Äèàïàçîíà: ";
+	system("chcp 65001");
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐÐ°Ñ‡Ð°Ð»Ð¾ Ð”Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ð°: ";
 	int nachalo = 0;
 	std::cin >> nachalo;
-	std::cout << "Ââåäèòå Êîíåö Äèàïàçîíà: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐšÐ¾Ð½ÐµÑ† Ð”Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ð°: ";
 	int konec = 0;
 	std::cin >> konec;
 	int sum = 0;
@@ -13,5 +13,5 @@ int main() {
 		sum += i;
 
 	}
-	std::cout << "Ñóììà: " << sum;
+	std::cout << "Ð¡ÑƒÐ¼Ð¼Ð°: " << sum;
 }

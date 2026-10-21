@@ -1,12 +1,12 @@
 #include <iostream>
 #include <vector>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	char name[30], surename[30];
-	std::cout << "Ââåäèòå èìÿ(Ìàêñèìóì 30 ñèìâîëîâ)>_ ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ(ÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼ 30 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²)>_ ";
 	std::cin >> name;
-	std::cout << "Ââåäèòå ôàìèëèþ(Ìàêñèìóì 30 ñèìâîëîâ)>_ ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°Ð¼Ð¸Ð»Ð¸ÑŽ(ÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼ 30 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²)>_ ";
 	std::cin >> surename;
-	std::cout << "Ïðèâåòñòâóþ " << surename << ", " << name;
+	std::cout << "ÐŸÑ€Ð¸Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÑŽ " << surename << ", " << name;
 	
 }

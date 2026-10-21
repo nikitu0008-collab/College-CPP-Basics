@@ -1,19 +1,19 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	srand(static_cast<int>(time(0)));
 	int rows;
-	std::cout << "Âåäèòå êîë-âî ñòðîê: ";
+	std::cout << "Ð’ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÑ‚Ñ€Ð¾Ðº: ";
 	std::cin >> rows;
 	int cols;
-	std::cout << "Âåäèòå êîë-âî ñòîëáöîâ: ";
+	std::cout << "Ð’ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÑ‚Ð¾Ð»Ð±Ñ†Ð¾Ð²: ";
 	std::cin >> cols;
 	int cho = 0;
 	int** arr_x2 = new int* [rows];
 	double sum = 0;
 	double avg;
 	int amount = rows * cols;
-	std::cout << "Êàê çàïîëíèòü? \n 1.Ñ êëàâèàòóðû \n 2.Ðàíäîì ïîëíåéøèé \n Ââîä: ";
+	std::cout << "ÐšÐ°Ðº Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÑŒ? \n 1.Ð¡ ÐºÐ»Ð°Ð²Ð¸Ð°Ñ‚ÑƒÑ€Ñ‹ \n 2.Ð Ð°Ð½Ð´Ð¾Ð¼ Ð¿Ð¾Ð»Ð½ÐµÐ¹ÑˆÐ¸Ð¹ \n Ð’Ð²Ð¾Ð´: ";
 	std::cin >> cho;
 	for (int i = 0; i < rows; i++) {
 		arr_x2[i] = new int[cols];
@@ -36,7 +36,7 @@ int main() {
 	}
 	std::cout << "\n";
 	avg = sum / amount;
-	std::cout << "\n" << "Îáùåå êîë-âî ýëåìåíòîâ -> " << amount << "\n" << "Ñðåäíåå çíà÷åíèå -> " << avg << "\n";
+	std::cout << "\n" << "ÐžÐ±Ñ‰ÐµÐµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² -> " << amount << "\n" << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ -> " << avg << "\n";
 	for (int i = rows -1; i >= 0; i--) {
 		std::cout << std::endl;
 		for (int j = cols-1; j >= 0; j--) {

@@ -1,6 +1,7 @@
 #include <iostream>
+#include <cstring>
 int myFunc(char string[], char cha) {
-	for (int i = 0; i < strlen(string); i++) {
+	for (int i = 0; i < static_cast<int>(strlen(string)); i++) {
 		if (string[i] == cha) {
 			return i;
 		}
@@ -10,27 +11,26 @@ int myFunc(char string[], char cha) {
 	}
 }
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	char string[99];
 	char cha;
-	int count = 0;
-	std::cout << "Ââåäèòå ñòðîêó: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ: ";
 	std::cin >> string;
-	std::cout << "Ââåäèòå áóêâó: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð±ÑƒÐºÐ²Ñƒ: ";
 	std::cin >> cha;
 	std::cin.clear();
 //	for (int i = 0; i < strlen(string); i++) {
 //		if (string[i] == cha) {
-//			std::cout << "\n" << "Ñèìâîë " << cha << " íàéäåí è îí  " << i+1 << " ïî ñ÷åòó";
+//			std::cout << "\n" << "Ð¡Ð¸Ð¼Ð²Ð¾Ð» " << cha << " Ð½Ð°Ð¹Ð´ÐµÐ½ Ð¸ Ð¾Ð½  " << i+1 << " Ð¿Ð¾ ÑÑ‡ÐµÑ‚Ñƒ";
 //			count++;
 //		}
 //	}
-//	if (count == 0) std::cout << "Òàêîé áóêâû íåò";
+//	if (count == 0) std::cout << "Ð¢Ð°ÐºÐ¾Ð¹ Ð±ÑƒÐºÐ²Ñ‹ Ð½ÐµÑ‚";
 	if (myFunc(string, cha) != 0) {
-		std::cout << "\n" << "Ñèìâîë " << cha << " íàéäåí è îí  " << myFunc(string, cha) + 1 << " ïî ñ÷åòó";
+		std::cout << "\n" << "Ð¡Ð¸Ð¼Ð²Ð¾Ð» " << cha << " Ð½Ð°Ð¹Ð´ÐµÐ½ Ð¸ Ð¾Ð½  " << myFunc(string, cha) + 1 << " Ð¿Ð¾ ÑÑ‡ÐµÑ‚Ñƒ";
 	}
 	else {
-		std::cout << "Òàêîé áóêâû íåò";
+		std::cout << "Ð¢Ð°ÐºÐ¾Ð¹ Ð±ÑƒÐºÐ²Ñ‹ Ð½ÐµÑ‚";
 	}
 	
 	

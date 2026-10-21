@@ -1,13 +1,13 @@
 #include <iostream>
 int main() {
-	system("chcp 1251 > nul");
+	system("chcp 65001 > nul");
 	int size;
-	std::cout << "Ââåäèòå ðàçìåð ìàññèâà: " << "\n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << "\n";
 	std::cin >> size;
 	int count = 0;
 	int* arr = new int[size];
 	int size2 = 0;
-	std::cout << "Ââåäèòå ýëåìåíòû ìàññèâà";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¼Ð°ÑÑÐ¸Ð²Ð°";
 	for (int i = 0; i < size; i++) {
 		std::cout << "\n" "arr " << "[" << i << "]" << " = ";
 		std::cin >> arr[i];
@@ -27,7 +27,7 @@ int main() {
 		for (int j = 0; j < size; j++) {
 			if (arr[i] == arr[j] && i != j) {
 				count++;
-				std::cout << "Ýëåìåíò " << arr[i] << " ïîä èíäåêñîì " << "[" << i << "]" << " Ïîâòîðÿåòñÿ" << "\n";
+				std::cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ " << arr[i] << " Ð¿Ð¾Ð´ Ð¸Ð½Ð´ÐµÐºÑÐ¾Ð¼ " << "[" << i << "]" << " ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€ÑÐµÑ‚ÑÑ" << "\n";
 			}
 		}
 		if (count == 0) {
@@ -53,8 +53,8 @@ int main() {
 	for (int i = 0; i < size; i++) std::cout << arr[i] << " ";
 	std::cout << " --> unique_arr " << "[" << size2 << "] ";
 	for (int i = 0; i < size2; i++) std::cout << unique_arr[i] << " ";
-	std::cout << "\n" << "Ìèíèìàëüíûé ýëåìåíò ìàññèâà arr " << min;
-	std::cout << "\n" << "Ìàêñèìàëüíûé ýëåìåíò ìàññèâà arr " << max;
+	std::cout << "\n" << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð° arr " << min;
+	std::cout << "\n" << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð° arr " << max;
 
 	
 

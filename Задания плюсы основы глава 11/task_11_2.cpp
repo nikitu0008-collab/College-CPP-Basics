@@ -39,21 +39,20 @@ void deleteArray(int*& arr, int& size) {
 	size = 0;
 }
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	srand(static_cast<int>(time(0)));
 	int size = 1;
 	int copy_size = 1;
 	int nackoko;
 	int* arr = nullptr;
 	int* copy_arr = nullptr;
-	int choice = 1;
 	while (size != 0) {
 		int choice = 88;
-		std::cout << "\n×òî Ñäåëàòü???\n1.Ñîçäàòü ìàññèâ\n2.Âûâåñòè ìàññèâ\n3.Ñîçäàòü êîïèþ ìàññèâà\n4.Óâåëè÷èòü ðàçìåð ìàññèâà íà âûáðàííîå çíà÷åíèå\n5.Óìåíüøèòü ðàçìåð ìàññèâà íà âûáðàííîå çíà÷åíèå\n6.Óäàëèòü ìàññèâ\n>_";
+		std::cout << "\nÐ§Ñ‚Ð¾ Ð¡Ð´ÐµÐ»Ð°Ñ‚ÑŒ???\n1.Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð¼Ð°ÑÑÐ¸Ð²\n2.Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¼Ð°ÑÑÐ¸Ð²\n3.Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ ÐºÐ¾Ð¿Ð¸ÑŽ Ð¼Ð°ÑÑÐ¸Ð²Ð°\n4.Ð£Ð²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ð° Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ\n5.Ð£Ð¼ÐµÐ½ÑŒÑˆÐ¸Ñ‚ÑŒ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ð° Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ\n6.Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¼Ð°ÑÑÐ¸Ð²\n>_";
 		std::cin >> choice;
 		switch (choice) {
 		case 1: 
-			std::cout << "\nÂâåäèòå ðàçìåð ìàññèâà: ";
+			std::cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 			std::cin >> size;
 			createArray(size, arr);
 			break;
@@ -61,17 +60,17 @@ int main() {
 			printArray(size, arr);
 			break;
 		case 3:
-			std::cout << "\nÂâåäèòå ðàçìåð êîïèè";
+			std::cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ ÐºÐ¾Ð¿Ð¸Ð¸";
 			std::cin >> copy_size;
 			copyArray(size, copy_size, arr, copy_arr);
 			break;
 		case 4:
-			std::cout << "\nÂâåäèòå íàñêîëüêî óâåëè÷èòü: ";
+			std::cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°ÑÐºÐ¾Ð»ÑŒÐºÐ¾ ÑƒÐ²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ: ";
 			std::cin >> nackoko;
 			arrPlus(size, arr, nackoko, copy_arr);
 			break;
 		case 5:
-			std::cout << "\nÂâåäèòå íàñêîëüêî óìåíüøèòü: ";
+			std::cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°ÑÐºÐ¾Ð»ÑŒÐºÐ¾ ÑƒÐ¼ÐµÐ½ÑŒÑˆÐ¸Ñ‚ÑŒ: ";
 			std::cin >> nackoko;
 			arrMinus(size, arr, nackoko, copy_arr);
 			break;

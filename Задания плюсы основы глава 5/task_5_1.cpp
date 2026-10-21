@@ -7,12 +7,12 @@ void myMul(int num1, int num2) {
 	
 }
 void myMessage() {
-	std::cout << "\nÇàäàíèå 2: ";
-	std::cout << "\n	Îêàê";
+	std::cout << "\nÐ—Ð°Ð´Ð°Ð½Ð¸Ðµ 2: ";
+	std::cout << "\n	ÐžÐºÐ°Ðº";
 	 
 }
 void myCycle() {
-	std::cout << "\nÇàäàíèå 3: \n	";
+	std::cout << "\nÐ—Ð°Ð´Ð°Ð½Ð¸Ðµ 3: \n	";
 	for (int i = -19; i < 24; i++) {
 		std::cout << i << " ";
 	}
@@ -20,10 +20,10 @@ void myCycle() {
 }
 
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	int cho1, cho2;
-	std::cout << R"(Çàäàíèå 1:
-	Ââåäèòå 2 ÷èñëà: )";
+	std::cout << R"(Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 1:
+	Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 2 Ñ‡Ð¸ÑÐ»Ð°: )";
 	std::cin >> cho1 >> cho2;
 	myMul(cho1, cho2);
 	myMessage();

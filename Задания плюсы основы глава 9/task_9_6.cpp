@@ -1,6 +1,6 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	srand(static_cast<int>(time(0)));
 	int size = rand() % 30 + 1;
 	int* arr_x1 = new int[size];
@@ -22,17 +22,17 @@ int main() {
 	}
 	std::cout << "\n";std::cout << "\n";
 	int pages;
-	std::cout <<"Ââåäèòå êîë-âî ñòðàíèö: " << "\n";
+	std::cout <<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†: " << "\n";
 	std::cin >> pages;
-	std::cout << "Ââåäèòå êîë-âî ñòðîê: " << "\n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÑ‚Ñ€Ð¾Ðº: " << "\n";
 	std::cin >> rows;
-	std::cout << "Ââåäèòå êîë-âî ñòîëáöîâ: " << "\n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÑ‚Ð¾Ð»Ð±Ñ†Ð¾Ð²: " << "\n";
 	std::cin >> cols;
 
 	int*** arr_x3 = new int** [pages];
 	for (int i = 0;i < pages; i++) {
 		arr_x3[i] = new int* [rows];
-		std::cout << "ÍÎÂÀß ÑÒÐÀÍÈÖÀ" << "\n";
+		std::cout << "ÐÐžÐ’ÐÐ¯ Ð¡Ð¢Ð ÐÐÐ˜Ð¦Ð" << "\n";
 		for (int j = 0; j < rows; j++) {
 			arr_x3[i][j] = new int[cols];
 			for (int k = 0; k < cols; k++) {

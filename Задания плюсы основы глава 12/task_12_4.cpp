@@ -1,13 +1,14 @@
 #include <iostream>
+#include <cstring>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	char word[30];
-	std::cout << "Ââåäèòå ñëîâî: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»Ð¾Ð²Ð¾: ";
 	std::cin >> word;
-	for (int i = 0; i < strlen(word) - 1; i++) {
+	for (size_t i = 0; i + 1 < strlen(word); i++) {
 		std::cout << word[i] << "\n";
 	}
-	for (int i = strlen(word) - 1; i >= 0; i--) {
+	for (size_t i = strlen(word); i > 0; i--) {
 		std::cout << word[i] << " ";
 	}
 }

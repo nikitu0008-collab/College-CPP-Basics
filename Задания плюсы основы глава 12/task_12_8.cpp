@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	std::string str;
 	std::getline(std::cin, str);
 	std::cout << str << "\n";
@@ -9,15 +9,15 @@ int main() {
 	std::cout << str << "\n";
 	str.erase(0, 5);
 	std::cout << str << "\n";
-	std::cout << '\n' << "Êàêîé ıëåìåíò óäàëèòü?: ";
+	std::cout << '\n' << "ĞšĞ°ĞºĞ¾Ğ¹ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚ ÑƒĞ´Ğ°Ğ»Ğ¸Ñ‚ÑŒ?: ";
 	int element;
 	std::cin >> element;
 	str.erase(str.begin() + element);
 	std::cout << str << "\n";
-	std::cout << "îò êàêîãî óäàëèòü ";
+	std::cout << "Ğ¾Ñ‚ ĞºĞ°ĞºĞ¾Ğ³Ğ¾ ÑƒĞ´Ğ°Ğ»Ğ¸Ñ‚ÑŒ ";
 	int start;
 	std::cin >> start;
-	std::cout << "äî êàêîãî óäàëèòü ";
+	std::cout << "Ğ´Ğ¾ ĞºĞ°ĞºĞ¾Ğ³Ğ¾ ÑƒĞ´Ğ°Ğ»Ğ¸Ñ‚ÑŒ ";
 	int end;
 	std::cin >> end;
 	str.erase(str.begin() + start, str.begin() + end);

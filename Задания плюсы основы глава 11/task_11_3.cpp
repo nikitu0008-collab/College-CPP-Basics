@@ -1,14 +1,14 @@
 #include <iostream>
 #include <vector>
 int main(){
-	system("chcp 1251");
-	std::cout << "Ââåäèòå êîë-âî ýëåìåíòîâ ìàññèâà: ";
+	system("chcp 65001");
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	int size;
 	std::cin >> size;
 	std::vector<int>vector(size);
 	int sum = 0;
 	for (int i = 0; i < size; i++) {
-		std::cout << "Ââîäèòå: ";
+		std::cout << "Ð’Ð²Ð¾Ð´Ð¸Ñ‚Ðµ: ";
 		std::cin >> vector.at(i);
 		sum += vector.at(i);
 	}
@@ -17,5 +17,5 @@ int main(){
 		if (vector.at(i) < min) min = vector.at(i);
 		if (vector.at(i) > max) max = vector.at(i);
 	}
-	std::cout << "\nÌàêñèìàëüíûé ýëåìåíò " << max << "\nÌèíèìàëüíûé ýëåìåíò " << min << "\nÑóììà " << sum << std::endl;
+	std::cout << "\nÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ " << max << "\nÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ " << min << "\nÐ¡ÑƒÐ¼Ð¼Ð° " << sum << std::endl;
 }

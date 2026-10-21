@@ -2,12 +2,12 @@
 #include <fstream>
 int main() {
 	srand(static_cast<int>(time(0)));
-	system("chcp 1251");
+	system("chcp 65001");
 	int rows, cols;
 	double min, max, sum = 0, avg = 0;
-	std::cout << "Ââåäèòå êîë-âî ñòðîê: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÑ‚Ñ€Ð¾Ðº: ";
 	std::cin >> rows;
-	std::cout << "Ââåäèòå êîë-âî ñòîëáöîâ: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÑ‚Ð¾Ð»Ð±Ñ†Ð¾Ð²: ";
 	std::cin >> cols;
 	double** arr = new double* [rows];
 	int count = 0;
@@ -21,7 +21,7 @@ int main() {
 	max = arr[0][0];
 	min = arr[0][0];
 	std::fstream file("numbers.txt");
-	file << "Ìàòðèöà: ";
+	file << "ÐœÐ°Ñ‚Ñ€Ð¸Ñ†Ð°: ";
 	for (int i = 0; i < rows; i++) {
 		file << '\n';
 		for (int j = 0; j < cols; j++) {
@@ -32,9 +32,9 @@ int main() {
 		}
 	}
 	avg = sum / count;
-	file << "\nÌèíèìóì: " << min;
-	file << "\nÌàêñèìóì: " << max;
-	file << "\nÑóììà: " << sum;
-	file << "\nÑðåäíåå: " << avg;
+	file << "\nÐœÐ¸Ð½Ð¸Ð¼ÑƒÐ¼: " << min;
+	file << "\nÐœÐ°ÐºÑÐ¸Ð¼ÑƒÐ¼: " << max;
+	file << "\nÐ¡ÑƒÐ¼Ð¼Ð°: " << sum;
+	file << "\nÐ¡Ñ€ÐµÐ´Ð½ÐµÐµ: " << avg;
 	file.close();
 }

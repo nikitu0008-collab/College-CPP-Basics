@@ -26,7 +26,7 @@ int myMin(int arr[][columns]) {
 	}return min;
 }
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	srand(static_cast<int>(time(0)));
 	int arr[rows][columns];
 	for (int i = 0; i < rows; i++) {
@@ -35,8 +35,8 @@ int main() {
 		}
 	}
 	myMassive(arr);
-	std::cout << "\n" << "Ìàêñèìàëüíîå çíà÷åíèå ìàññèâà ÷åðåç ôóíêöèþ: " << myMax(arr);
-	std::cout << "\n" << "Ìèíèìàëüíîå çíà÷åíèå ìàññèâà ÷åðåç ôóíêöèþ: " << myMin(arr);
+	std::cout << "\n" << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ñ‡ÐµÑ€ÐµÐ· Ñ„ÑƒÐ½ÐºÑ†Ð¸ÑŽ: " << myMax(arr);
+	std::cout << "\n" << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ñ‡ÐµÑ€ÐµÐ· Ñ„ÑƒÐ½ÐºÑ†Ð¸ÑŽ: " << myMin(arr);
 		
 	
 }

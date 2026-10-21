@@ -1,11 +1,11 @@
 #include <iostream>
 
 void myFunc(int& num) {
-	std::cout << "Àäðåñ ïåðåìåííîé â ôóíêöèè: " << &num << "\n" << "Çíà÷åíèå ïî ýòîìó àäðåñó: " << num << "\n";
+	std::cout << "ÐÐ´Ñ€ÐµÑ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹ Ð² Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸: " << &num << "\n" << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿Ð¾ ÑÑ‚Ð¾Ð¼Ñƒ Ð°Ð´Ñ€ÐµÑÑƒ: " << num << "\n";
 }
 
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	int num = 151;
 	int* ptr;
 	int& link = num;

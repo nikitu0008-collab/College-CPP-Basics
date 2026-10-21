@@ -1,26 +1,26 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	const int dlina = 5;
 	int arr[dlina];
 	int max = 0, min = 0;
 	double avg = 0;
 	double sum = 0;
-	std::cout << "Çàïîëíèòå: ";
+	std::cout << "Ð—Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ: ";
 	for (int i = 0; i < dlina; i++) {
 		std::cin >> arr[i];
 		sum += arr[i];
 		std::cout  << arr[i] << " ";
 	}
 	avg = (sum / dlina);
-	std::cout << "\nÑóììà ââåä¸ííûõ ÷èñåë: " << sum << " Ñðåäíåå çíà÷åíèå: " << avg;
+	std::cout << "\nÐ¡ÑƒÐ¼Ð¼Ð° Ð²Ð²ÐµÐ´Ñ‘Ð½Ð½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ»: " << sum << " Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: " << avg;
 	
 	min = arr[0]; max = arr[0];
 	for (int i = 0; i < dlina; i++) {
 		if (arr[i] < min) min = arr[i];
 		if (arr[i] > max) max = arr[i];
 	}
-	std::cout << "\nÍàèáîëüøåå: " << max << " Íàèìåíüøåå: " << min;
+	std::cout << "\nÐÐ°Ð¸Ð±Ð¾Ð»ÑŒÑˆÐµÐµ: " << max << " ÐÐ°Ð¸Ð¼ÐµÐ½ÑŒÑˆÐµÐµ: " << min;
 	
 
 }	

@@ -1,8 +1,8 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	double num1, num2, num3, num4;
-	std::cout << "Ââåäèòå âñå åëåìåíòû ìàññèâà: ";
+	std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ²ÑĞµ ĞµĞ»ĞµĞ¼ĞµĞ½Ñ‚Ñ‹ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°: ";
 	std::cin >> num1 >> num2 >> num3 >> num4;
 	double arr2x2[2][2] = { {num1, num2}, {num3, num4} };
 	std::cout << arr2x2[0][0] << " " << arr2x2[0][1] << "\n" << arr2x2[1][0] << " " << arr2x2[1][1] << "\n";

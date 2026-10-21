@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	std::string str;
 	std::ifstream input("13_3.txt");
 	std::getline(input, str, '\0');

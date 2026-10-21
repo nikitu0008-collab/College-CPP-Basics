@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	std::ofstream outp("13_2.txt");
 	std::string vvod;
 	std::getline(std::cin, vvod, '~');

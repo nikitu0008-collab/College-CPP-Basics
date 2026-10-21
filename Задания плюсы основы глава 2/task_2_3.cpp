@@ -2,12 +2,12 @@
 #include <cstdint>
 #include <cstdlib>
 auto main() -> int{
-	system("chcp 1251");
+	system("chcp 65001");
 	uint16_t x, t, g; 
         int k;
-	std::cout << "Ââåäèòå çíà÷åíèå ïåðåìåííûõ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ñ…";
 	std::cin >> x >> t >> g;
 	k = (x / 2 + (t + t + t) - (g + g) - t * t);
-	std::cout << "Ñóììà ÷èñåë: " << k;
+	std::cout << "Ð¡ÑƒÐ¼Ð¼Ð° Ñ‡Ð¸ÑÐµÐ»: " << k;
 	return EXIT_SUCCESS;
 }

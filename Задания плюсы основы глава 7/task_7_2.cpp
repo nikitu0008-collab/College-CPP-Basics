@@ -1,6 +1,6 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	srand(static_cast<int>(time(0)));
 	const int rows = 5, columns = 8;
 	int arr5x8[rows][columns];
@@ -19,7 +19,7 @@ int main() {
 			if (min < arr5x8[i][j]) min = arr5x8[i][j];
 			if (max > arr5x8[i][j]) max = arr5x8[i][j];
 	}
-	std::cout <<"\n" << "Ñóììà ýëåìåíòîâ: " << sum << "\n";
-	std::cout << "Ìàêñèìàëüíûé ýëåìåíò: " << max << "\n";
-	std::cout << "Ìèíèìàëüíûé ýëåìåíò: " << min;
+	std::cout <<"\n" << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " << sum << "\n";
+	std::cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚: " << max << "\n";
+	std::cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚: " << min;
 }

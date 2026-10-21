@@ -4,7 +4,7 @@
 #include <cstdlib>   // для EXIT_SUCCESS, EXIT_FAILURE, system
 
 auto main() -> int {
-    system("chcp 1251");
+    system("chcp 65001");
 
     int choice;
     double num1 = 0.0, num2 = 0.0;

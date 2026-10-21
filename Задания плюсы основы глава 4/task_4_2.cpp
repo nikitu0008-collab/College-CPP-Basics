@@ -2,7 +2,7 @@
 #include <cstdlib>
 
 auto main() -> int {
-    system("chcp 1251");
+    system("chcp 65001");
 
     std::cout << "Введите сколько раз: ";
     int hello = 0;

@@ -2,10 +2,10 @@
 #include <cstdint>
 #include <cstdlib>
 auto main() -> int{
-	system("chcp 1251");
+	system("chcp 65001");
 	int16_t num1, num2;
-	std::cout << "1 ÷èñëî: "; std::cin >> num1; std::cout << "2 ÷èñëî: "; std::cin >> num2;
-	std::cout << "Ğàçíèöà:" << num1 - num2 << "Ñóììà:" << num1 + num2 << "Ïğîèçâåäåíèå:" << num1 * num2;
+	std::cout << "1 Ñ‡Ğ¸ÑĞ»Ğ¾: "; std::cin >> num1; std::cout << "2 Ñ‡Ğ¸ÑĞ»Ğ¾: "; std::cin >> num2;
+	std::cout << "Ğ Ğ°Ğ·Ğ½Ğ¸Ñ†Ğ°:" << num1 - num2 << "Ğ¡ÑƒĞ¼Ğ¼Ğ°:" << num1 + num2 << "ĞŸÑ€Ğ¾Ğ¸Ğ·Ğ²ĞµĞ´ĞµĞ½Ğ¸Ğµ:" << num1 * num2;
 	return EXIT_SUCCESS;
 
 }

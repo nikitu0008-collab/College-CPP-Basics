@@ -1,6 +1,6 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	int* ptr = nullptr;
 	std::cout << "ptr: " << ptr;
 	int* ptr1 = nullptr;

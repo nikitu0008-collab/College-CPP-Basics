@@ -16,9 +16,9 @@ void sortFunc(int* arr, int size) {
 	for (int i = 0; i < size; i++) std::cout << arr[i] << ' ';
 }
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	srand(static_cast<int>(time(0)));
-	std::cout << "Ââåäèòå ðàçìåð îäíîìåðíîãî ìàññèâà: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¾Ð´Ð½Ð¾Ð¼ÐµÑ€Ð½Ð¾Ð³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	int size;
 	std::cin >> size;
 	int* arr = new int[size];
@@ -28,12 +28,12 @@ int main() {
 	}
 	int cho = 1;
 	while (cho != 0) {
-		std::cout << "\n×òî ñäåëàòü? \n1.Çàìåíà 2õ ýëåìåíòîâ ïî èíäåêñó \n2.Óäàëèòü ýëåìåíò ìàññèâà\n3.Ñîðòèðîâêà ïî âîçðîñòàíèþ\n>_ ";
+		std::cout << "\nÐ§Ñ‚Ð¾ ÑÐ´ÐµÐ»Ð°Ñ‚ÑŒ? \n1.Ð—Ð°Ð¼ÐµÐ½Ð° 2Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¿Ð¾ Ð¸Ð½Ð´ÐµÐºÑÑƒ \n2.Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°\n3.Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð¿Ð¾ Ð²Ð¾Ð·Ñ€Ð¾ÑÑ‚Ð°Ð½Ð¸ÑŽ\n>_ ";
 		std::cin >> cho;
 		if (cho == 1) { 
 			int index1;
 			int index2;
-			std::cout << "Ââåäèòå èíäåêñû 2õ ýëåìåíòîâ: ";
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð½Ð´ÐµÐºÑÑ‹ 2Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: ";
 			std::cin >> index1 >> index2;
 			swapFunc(arr, size, index1, index2);
 		}

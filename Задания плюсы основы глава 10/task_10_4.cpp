@@ -6,7 +6,7 @@ void megaFunc(int num) {
 	}
 }
 void megaFunc(int num, int num2) {
-		std::cout << "Äèàïàçîí ÷èñåë ìåæäó íèìi: ";
+		std::cout << "Ð”Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½ Ñ‡Ð¸ÑÐµÐ» Ð¼ÐµÐ¶Ð´Ñƒ Ð½Ð¸Ð¼i: ";
 	for (int i = num+1; i < num2; i++) {
 		std::cout << i << " ";
 	}
@@ -34,7 +34,7 @@ int megaFunc(int arr[size]) {
 }
 
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	int arr[size] = {10, 20, 30, 40, 50, 60, 70, 80, 90,100};
 	megaFunc(5);
 	megaFunc(50, 100); std::cout << "\n";

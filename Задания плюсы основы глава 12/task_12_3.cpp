@@ -1,20 +1,20 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	char name[30];
 	char place[30];
 	int day;
 	int month;
 	int year;
-	std::cout << "Ââåäèòå ñâî¸ èìÿ >_:";
+	std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑĞ²Ğ¾Ñ‘ Ğ¸Ğ¼Ñ >_:";
 	std::cin >> name;
-	std::cout << "\n" << "Ââåäèòå äåíü ğîæäåíèÿ >_:";
+	std::cout << "\n" << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ´ĞµĞ½ÑŒ Ñ€Ğ¾Ğ¶Ğ´ĞµĞ½Ğ¸Ñ >_:";
 	std::cin >> day;
-	std::cout << "\n" << "Ââåäèòå ìåñÿö ğîæäåíèÿ >_:";
+	std::cout << "\n" << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¼ĞµÑÑÑ† Ñ€Ğ¾Ğ¶Ğ´ĞµĞ½Ğ¸Ñ >_:";
 	std::cin >> month;
-	std::cout << "\n" << "Ââåäèòå ãîä ğîæäåíèÿ >_:";
+	std::cout << "\n" << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ³Ğ¾Ğ´ Ñ€Ğ¾Ğ¶Ğ´ĞµĞ½Ğ¸Ñ >_:";
 	std::cin >> year;
-	std::cout << "\n" << "Îòêóäà âû? >_:";
+	std::cout << "\n" << "ĞÑ‚ĞºÑƒĞ´Ğ° Ğ²Ñ‹? >_:";
 	std::cin >> place;
 	int age = 2026 - year;
 	std::cout << " Hello, " << name << " from " << place << ' ' << day << '.' << month << '.' << year << '.' << " dob. " << "Your age is " << age;

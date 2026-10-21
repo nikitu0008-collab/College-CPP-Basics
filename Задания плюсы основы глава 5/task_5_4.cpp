@@ -8,13 +8,13 @@ return degree;
 }
 
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	int osn;
-	std::cout << "Ââåäèòå ÷èñëî: ";
+	std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾: ";
 	std::cin >> osn;
 	int step;
-	std::cout << "Ââåäèòå ñòåïåíü: ";
+	std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑÑ‚ĞµĞ¿ĞµĞ½ÑŒ: ";
 	std::cin >> step;
-	std::cout << "×èñëî â ñòåïåíè: " << myDegree(osn, step);
+	std::cout << "Ğ§Ğ¸ÑĞ»Ğ¾ Ğ² ÑÑ‚ĞµĞ¿ĞµĞ½Ğ¸: " << myDegree(osn, step);
 
 }

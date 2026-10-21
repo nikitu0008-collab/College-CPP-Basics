@@ -1,6 +1,6 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	srand(static_cast<int>(time(0)));
 	const int rows = 7, columns = 5;
 	int arr[rows][columns];
@@ -13,19 +13,20 @@ int main() {
 			sum += arr[i][j];
 		}
 	}
+	std::cout << "\nÐ¡ÑƒÐ¼Ð¼Ð° Ð²ÑÐµÑ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " << sum << "\n";
 	int cho;
-	std::cout << "\n" << "Ââåäèòå ñòðîêó êîòîðóþ âûâåñòè: ";
+	std::cout << "\n" << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ ÐºÐ¾Ñ‚Ð¾Ñ€ÑƒÑŽ Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸: ";
 	std::cin >> cho;
-	std::cout << "Âîò " << cho << " ñòðîêà: ";
+	std::cout << "Ð’Ð¾Ñ‚ " << cho << " ÑÑ‚Ñ€Ð¾ÐºÐ°: ";
 		for (int j = 0; j < columns; j++) {
 			std::cout << arr[cho-1][j] << "\t";
 		}
-		std::cout << "\nÊàêîå ÷èñëî íàéòè âî âñ¸ì ìàññèâå? : ";
+		std::cout << "\nÐšÐ°ÐºÐ¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð½Ð°Ð¹Ñ‚Ð¸ Ð²Ð¾ Ð²ÑÑ‘Ð¼ Ð¼Ð°ÑÑÐ¸Ð²Ðµ? : ";
 		int num;
 		std::cin >> num;
 		for (int i = 0; i < rows; i++) 
 			for (int j = 0; j < columns; j++) {
-				if (num == arr[i][j]) std::cout << "×èñëî íàéäåíî ïî êîîðäèíàòàì " << "[" << i  << "] " << "[" << j << "]" << "\n";
+				if (num == arr[i][j]) std::cout << "Ð§Ð¸ÑÐ»Ð¾ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ Ð¿Ð¾ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ð°Ð¼ " << "[" << i  << "] " << "[" << j << "]" << "\n";
 
 			}
 		

@@ -7,11 +7,11 @@ double myModul(double num) {
  }
 
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	double num1, num2;
-	std::cout << "Ââåäèòå 2 ÷èñëà: "; std::cin >> num1 >> num2;
-	std::cout << "Ìîäóëè ýòèõ ÷èñåë: " << myModul(num1) << " " << myModul(num2);
-	std::cout << "\nÑóììà ìîäóëåé: " << myModul(num1) + myModul(num2);
-	std::cout << "\nÌîäóëü ñóììû: " << myModul(num1 + num2);
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 2 Ñ‡Ð¸ÑÐ»Ð°: "; std::cin >> num1 >> num2;
+	std::cout << "ÐœÐ¾Ð´ÑƒÐ»Ð¸ ÑÑ‚Ð¸Ñ… Ñ‡Ð¸ÑÐµÐ»: " << myModul(num1) << " " << myModul(num2);
+	std::cout << "\nÐ¡ÑƒÐ¼Ð¼Ð° Ð¼Ð¾Ð´ÑƒÐ»ÐµÐ¹: " << myModul(num1) + myModul(num2);
+	std::cout << "\nÐœÐ¾Ð´ÑƒÐ»ÑŒ ÑÑƒÐ¼Ð¼Ñ‹: " << myModul(num1 + num2);
 
 }

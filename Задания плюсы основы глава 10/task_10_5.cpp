@@ -7,12 +7,12 @@ T modulFunc(T num) {
 	else return num;
 }
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	int num1;
 	double num2;
-	std::cout << "Ââåäèòå 2 ÷èñëà 1-int 2-double: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 2 Ñ‡Ð¸ÑÐ»Ð° 1-int 2-double: ";
 	std::cin >> num1 >> num2;
-	std::cout << "Ìîäóëè: " << modulFunc(num1) << " " << modulFunc(num2) << "\n";
-	std::cout << "Ñóììà ìîäóëåé: " << modulFunc(num1) + modulFunc(num2) << "\n";
-	std::cout << "Ìîäóëü ñóììû: " << modulFunc(num1 + num2);
+	std::cout << "ÐœÐ¾Ð´ÑƒÐ»Ð¸: " << modulFunc(num1) << " " << modulFunc(num2) << "\n";
+	std::cout << "Ð¡ÑƒÐ¼Ð¼Ð° Ð¼Ð¾Ð´ÑƒÐ»ÐµÐ¹: " << modulFunc(num1) + modulFunc(num2) << "\n";
+	std::cout << "ÐœÐ¾Ð´ÑƒÐ»ÑŒ ÑÑƒÐ¼Ð¼Ñ‹: " << modulFunc(num1 + num2);
 }

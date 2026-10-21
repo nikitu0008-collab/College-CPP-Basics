@@ -1,9 +1,9 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	int* ptr = new int;
 	std::cout << ptr << " = " << *ptr;
-	std::cout << "\n Ââåäèòå íîâîå çíà÷åíèå äèíàìè÷åñêîé ïåðåìåííîé: ";
+	std::cout << "\n Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð²Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð¸Ð½Ð°Ð¼Ð¸Ñ‡ÐµÑÐºÐ¾Ð¹ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹: ";
 	std::cin >> *ptr;
 	std::cout << ptr << " = " << *ptr << "\n";
 	delete ptr;

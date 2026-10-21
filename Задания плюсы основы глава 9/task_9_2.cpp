@@ -1,24 +1,25 @@
 #include <iostream>
+#include <string>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	srand(static_cast <int>(time(0)));
-	char choice;
+	std::string choice;
 	int arr_size;
-	std::cout << "Ââåäèòå êîë-âî ýëåìåíòîâ: " << "\n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " << "\n";
 	std::cin >> arr_size;
 	double sum = 0;
 	double avg;
 	int* arr = new int[arr_size];
-	std::cout << "Êàê çàïîëíèòü? [Ê]ëàâèàòóðà [Ñ]ëó÷àéíûå ÷èñëà" << '\n';
+	std::cout << "ÐšÐ°Ðº Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÑŒ? [Ðš]Ð»Ð°Ð²Ð¸Ð°Ñ‚ÑƒÑ€Ð° [Ð¡]Ð»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ðµ Ñ‡Ð¸ÑÐ»Ð°" << '\n';
 	std::cin >> choice;
 
-	if (choice == 'Ê' || choice == 'K') {
-		std::cout << "Ââåäèòå âñå ýëåìåíòû: "<< "\n";
+	if (choice == "Ðš" || choice == "K") {
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²ÑÐµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹: "<< "\n";
 		for (int i = 0; i < arr_size; i++) {
 			std::cin >> arr[i];
 		}
 	}
-	if (choice == 'Ñ' || choice == 'C') {
+	if (choice == "Ð¡" || choice == "C") {
 		for (int i = 0; i < arr_size; i++) {
 			arr[i] = rand() % 100 + 1;
 		}
@@ -34,8 +35,8 @@ int main() {
 	}
 
 	avg = sum / arr_size;
-	std::cout << "\n" << "Ñóììà ýëåìåíòîâ: " << sum << "\n";
-	std::cout << "Ñðåäíåå àðèôìåòè÷åñêîå: " << avg << "\n";
-	std::cout << "Ìàêñèìàëüíûé è ìèíèìàëüíûé ýëåìåíò ìàññèâà: " << max << " " << min;
+	std::cout << "\n" << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " << sum << "\n";
+	std::cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ: " << avg << "\n";
+	std::cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð¸ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << max << " " << min;
 
 }

@@ -3,7 +3,7 @@
 #include <cmath>     // для std::abs
 
 auto main() -> int {
-    system("chcp 1251");
+    system("chcp 65001");
 
     double num1, num2;
     std::cout << "Введите 2 числа: ";

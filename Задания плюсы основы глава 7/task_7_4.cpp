@@ -1,6 +1,6 @@
 #include <iostream>
 int main() {
-	system("chcp 1251");
+	system("chcp 65001");
 	srand(static_cast<int>(time(0)));
 	const int rows = 7, columns = 5;
 	int arr[rows][columns];
@@ -13,12 +13,13 @@ int main() {
 			sum += arr[i][j];
 		}
 	}
-	std::cout << "\nÍàïèøèòå êîîðäèíàòû ÷èñëà êîòîðîå íóæíî óìíîæèòü íà 2: ";
+	std::cout << "\nÐ¡ÑƒÐ¼Ð¼Ð° Ð²ÑÐµÑ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " << sum << "\n";
+	std::cout << "\nÐÐ°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ñ‡Ð¸ÑÐ»Ð° ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ðµ Ð½ÑƒÐ¶Ð½Ð¾ ÑƒÐ¼Ð½Ð¾Ð¶Ð¸Ñ‚ÑŒ Ð½Ð° 2: ";
 	int i2, j2;
 	std::cin >> i2 >> j2;
 	int max = arr[0][0], min = arr[0][0];
 	if ((i2 >= rows || i2 < 0) || (j2 >= columns || j2 < 0)) {
-		std::cout << "Íåêîððåêòíûé èíäåêñ";
+		std::cout << "ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð¸Ð½Ð´ÐµÐºÑ";
 	
 	}
 	else {
@@ -31,7 +32,7 @@ int main() {
 				if (max > arr[i][j]) max = arr[i][j];
 			}
 		}
-		std::cout << "\n" << "Ìèíèìàëüíûé ýëåìåíò: " << min << "\n";
-		std::cout << "Ìàêñèìàëüíûé ýëåìåíò: " << max;
+		std::cout << "\n" << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚: " << min << "\n";
+		std::cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚: " << max;
 	}
 }
